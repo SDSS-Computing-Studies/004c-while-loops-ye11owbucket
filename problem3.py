@@ -13,3 +13,14 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+
+
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+nterms = 13
+print("Fibonacci sequence:")
+for i in range(nterms):
+    print(recur_fibo(i))

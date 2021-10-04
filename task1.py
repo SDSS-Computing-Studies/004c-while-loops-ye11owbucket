@@ -20,3 +20,14 @@ Example:
 10
 ...
 """
+import time
+import random
+
+count = 0
+
+while True:
+    delay = random.random() 
+    count = count + 2
+    print(count)
+    if count > 18:
+        break
