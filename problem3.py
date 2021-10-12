@@ -14,13 +14,10 @@ Example:
 1 1 2 3 5 ...
 """
 
-
-def recur_fibo(n):
-   if n <= 1:
-       return n
-   else:
-       return(recur_fibo(n-1) + recur_fibo(n-2))
-nterms = 13
-print("Fibonacci sequence:")
-for i in range(nterms):
-    print(recur_fibo(i))
+    
+def fib():
+    a, b = 0, 1
+    while True:                       
+        a, b = b, a + b 
+        print(a)
+    

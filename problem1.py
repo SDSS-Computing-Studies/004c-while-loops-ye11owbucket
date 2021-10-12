@@ -34,7 +34,7 @@ username = ""
 count = 0
 while True:
     print(count)
-    if count > 3:
+    if count > 9:
         print("Too many failed attempts. Access Denied")
         break
     username = str(input("Enter username:"))
