@@ -15,9 +15,13 @@ Example:
 """
 
     
-def fib():
-    a, b = 0, 1
-    while True:                       
-        a, b = b, a + b 
-        print(a)
+y = 1
+x = 1
+while True:
+    print(y,'', end='')
+    print(x,'', end='')
+    y = y + x
+    x = y + x
+    if y >= 200 or x >= 200:
+        break
     
